@@ -1,0 +1,42 @@
+.progressSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.progressContainer {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.controlsContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+
+@media (orientation: landscape) {
+  .progressContainer {
+    width: 75%;
+    flex-direction: row;
+  }
+  .progressSection {
+    flex-direction: row;
+  }
+  .progressText {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

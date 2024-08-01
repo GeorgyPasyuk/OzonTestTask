@@ -1,0 +1,17 @@
+{
+  "name": "ozonfintech_progress",
+  "version": "1.0.0",
+  "description": "Progress component vanilla js",
+  "main": "index.js",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "npx parcel src/index.html --host 0.0.0.0 --port 1234 --no-cache",
+    "prettier": "npx prettier . --write"
+  },
+  "author": "pasyukgeorgy@yandex.ru",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "prettier": "3.3.3"
+  }
+}

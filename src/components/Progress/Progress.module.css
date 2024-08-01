@@ -1,0 +1,24 @@
+@keyframes rotateProgress {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.progressBar {
+  position: relative;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.progressElement {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, white 79%, transparent 80%),
+    conic-gradient(#005cff 0% 75%, #eaf0f6 75%);
+  animation: rotateProgress 1s linear infinite;
+}
