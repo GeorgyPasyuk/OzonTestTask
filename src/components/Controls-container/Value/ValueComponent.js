@@ -1,5 +1,5 @@
 import { Component } from "../../../utils/Component";
-import styles from "./Value.module.css";
+import * as styles from "./Value.module.css";
 
 export class ValueComponent extends Component {
   constructor(onValueChange) {

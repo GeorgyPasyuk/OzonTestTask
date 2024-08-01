@@ -1,6 +1,6 @@
 import { Component } from "../../utils/Component";
 import { Progress } from "../Progress/Progress";
-import styles from "./ProgressSection.module.css";
+import * as styles from "./ProgressSection.module.css";
 import { ControlsContainer } from "../Controls-container/ControlsContainer";
 
 export class ProgressSection extends Component {

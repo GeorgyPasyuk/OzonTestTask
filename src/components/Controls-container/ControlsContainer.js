@@ -1,5 +1,5 @@
 import { Component } from "../../utils/Component";
-import styles from "./Controls.module.css";
+import * as styles from "./Controls.module.css";
 import { ValueComponent } from "./Value/ValueComponent";
 import { AnimateComponent } from "./Animate/AnimateComponent";
 import { HideComponent } from "./Hide/HideComponent";

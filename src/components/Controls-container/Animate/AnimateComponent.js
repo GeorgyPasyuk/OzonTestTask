@@ -1,5 +1,5 @@
 import { Component } from "../../../utils/Component";
-import styles from "./Animate.module.css";
+import * as styles from "./Animate.module.css";
 import { CheckBox } from "../../CheckBox/CheckBox";
 
 export class AnimateComponent extends Component {

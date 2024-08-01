@@ -1,5 +1,5 @@
 import { Component } from "../../../utils/Component";
-import styles from "./Hide.module.css";
+import * as styles from "./Hide.module.css";
 import { CheckBox } from "../../CheckBox/CheckBox";
 
 export class HideComponent extends Component {

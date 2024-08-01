@@ -1,5 +1,5 @@
 import { Component } from "../utils/Component";
-import styles from "./MainPage.module.css";
+import * as styles from "./MainPage.module.css";
 import { ProgressSection } from "../components/Progress-section/ProgressSection";
 
 export class MainPage extends Component {

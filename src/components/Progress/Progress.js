@@ -1,5 +1,5 @@
 import { Component } from "../../utils/Component";
-import styles from "./Progress.module.css";
+import * as styles from "./Progress.module.css";
 
 export class Progress extends Component {
   constructor(events = {}, children = []) {

@@ -2,7 +2,6 @@
   "name": "ozonfintech_progress",
   "version": "1.0.0",
   "description": "Progress component vanilla js",
-  "main": "index.js",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "npx parcel src/index.html --host 0.0.0.0 --port 1234 --no-cache",

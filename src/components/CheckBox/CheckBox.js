@@ -1,5 +1,5 @@
 import { Component } from "../../utils/Component";
-import styles from "./CheckBox.module.css";
+import * as styles from "./CheckBox.module.css";
 
 export class CheckBox extends Component {
   constructor(handleAnimateChange) {
