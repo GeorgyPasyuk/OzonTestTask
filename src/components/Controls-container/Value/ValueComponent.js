@@ -6,7 +6,7 @@ export class ValueComponent extends Component {
     super({
       input: (event) => this.handleValueChange(event),
     });
-    this.value = 50; // Установите начальное значение
+    this.value = 50; 
     this.onValueChange = onValueChange;
   }
 
