@@ -238,7 +238,61 @@ export class HideComponent extends Component {
   }
 }
 ```
+---
 
+## Использование компонента Progress
+
+```js
+export class ProgressSection extends Component {
+   init() {
+       
+      // Инициализация компонента Progress 
+      this.progress = new Progress();
+      
+      // Инициализация компонента Контроллера, который управляет 
+      // состоянием Progress'а
+      this.controlsContainer = new ControlsContainer(
+              (newValue) => this.updateProgressValue(newValue),
+              (isChecked) => this.updateProgressAnimation(isChecked),
+              (isHidden) => this.updateHideValue(isHidden),
+      );
+
+      this.children = {
+         progress: this.progress,
+         controls: this.controlsContainer,
+      };
+   }
+
+   // Управление степенью заполненности Progress
+   updateProgressValue(newValue) {
+      this.progress.setValue(newValue);
+   }
+   
+   // Управление анимацией
+   updateProgressAnimation(isChecked) {
+      this.progress.setAnimate(isChecked);
+   }
+   
+   // Управление отображением
+   updateHideValue(isHidden) {
+      isHidden ? this.progress.hide() : this.progress.show();
+   }
+
+   render() {
+      const htmlString = `
+      <section class="${styles.progressSection}">
+        <div class="${styles.progressContainer}">
+            <div data-component="progress"></div>
+        </div>
+        <div class="${styles.controlsContainer}">
+            <div data-component="controls"></div>
+        </div>
+      </section>
+    `;
+      return super.render(htmlString);
+   }
+}
+```
 ---
 
 ## Проблемные места
